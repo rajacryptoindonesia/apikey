@@ -1,0 +1,26 @@
+{
+  "vzz4you": {
+    "max_time": 200,
+    "cooldown": 60,
+    "concurrent": 1,
+    "expiry_days": 30
+  },
+  "JesusIsKing": {
+  "max_time": 60,
+  "cooldown": 60,
+  "concurrent": 1,
+  "expiry_days": 30
+  },
+  "ambon": {
+  "max_time": 100,
+  "cooldown": 60,
+  "concurrent": 1,
+  "expiry_days": 30
+  },
+  "isalganteng": {
+    "max_time": 1000,
+    "cooldown": 30,
+    "concurrent": 2,
+    "expiry_days": 30
+  }
+}

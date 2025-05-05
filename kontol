@@ -1,0 +1,16 @@
+const { spawn } = require('child_process');
+
+// Jalankan 'node tele'
+const teleProcess = spawn('node', ['tele'], { stdio: 'inherit' });
+
+// Jalankan 'node index'
+const indexProcess = spawn('node', ['index'], { stdio: 'inherit' });
+
+teleProcess.on('close', (code) => {
+  console.log(`tele exited with code ${code}`);
+});
+
+// Kalau salah satu proses keluar, tampilkan info
+indexProcess.on('close', (code) => {
+  console.log(`index.js exited with code ${code}`);
+});
